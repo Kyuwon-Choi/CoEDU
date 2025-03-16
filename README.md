@@ -1,81 +1,101 @@
-# backend
-### ✉️ Commit Messge Rules
-**서버** 들의 **Git Commit Message Rules**
+# Coedu
+<img width="525" alt="스크린샷 2025-02-27 오후 6 40 04" src="https://github.com/user-attachments/assets/47b17280-8605-405f-bae7-249cb20b30ed" />
 
-- 반영사항을 바로 확인할 수 있도록 작은 기능 하나라도 구현되면 커밋을 권장합니다.
-- 기능 구현이 완벽하지 않을 땐, 각자 브랜치에 커밋을 해주세요.
+🖥️실시간으로 소통하는 참여형 교육 WEB IDE 플랫폼 [Coedu]🖥️
 
-### 📌 Commit Convention
-**[태그] 제목의 형태**
+## 목차
 
-| 태그 이름 | 설명 |
-|-----------|------|
-| FEAT      | 새로운 기능을 추가할 경우 |
-| FIX       | 버그를 고친 경우 |
-| CHORE     | 짜잘한 수정 |
-| DOCS      | 문서 수정 |
-| INIT      | 초기 설정 |
-| TEST      | 테스트 코드, 리펙토링 테스트 코드 추가 |
-| RENAME    | 파일 혹은 폴더명을 수정하거나 옮기는 작업인 경우 |
-| STYLE     | 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우 |
-| REFACTOR  | 코드 리팩토링 |
+- [프로젝트 개요](#프로젝트-개요)
+- [프로젝트 설명](#프로젝트-설명)
+  1. [Backend Tech](#1-backend-tech)
+  2. [Database ERD](#2-database-erd)
+  3. [Architecture](#3-architecture)
+- [기능 설명](#기능-설명)
+  1. [회원 가입 및 로그인](#1-회원-가입-및-로그인)
+  2. [홈 화면](#2-홈-화면)
+  3. [IDE](#3-IDE)
+  4. [마이 페이지](#4-마이-페이지)
+- [기여](#기여)
+  
 
+## 프로젝트 개요
 
+| 항목       | 내용                                          |
+|------------|---------------------------------------------|
+| 프로젝트 소개 | 실시간으로 소통하는 참여형 교육 WEB IDE 플랫폼 [Coedu]  |
+| 개발 인원    | 7명 (프론트엔드 4명 + 백엔드 3명) |
+| 개발 기간    | 2025. 01. 14 ~ 2025. 02. 28               |
 
-### 커밋 타입
-- `[태그] 설명` 형식으로 커밋 메시지를 작성합니다.
-- 태그는 영어를 쓰고 대문자로 작성합니다.
+## 프로젝트 설명
 
-예시 >
-```
-  [FEAT] 검색 api 추가
-```  
-### 💻 Github mangement
-WorkFlow : **Gitflow Workflow**
+### 1. Backend Tech
 
-- Develop, Feature, Hotfix 브랜치
+## 기술 스택
 
-- 개발(develop): 기능들의 통합 브랜치
-
-- 기능 단위 개발(feature): 기능 단위 브랜치
-
-- 버그 수정 및 갑작스런 수정(hotfix): 수정 사항 발생 시 브랜치
-
-- 개발 브랜치 아래 기능별 브랜치를 만들어 작성합니다.
-#2
-
-### 📍 Gitflow 규칙
-- Develop에 직접적인 commit, push는 금지합니다.
-- 커밋 메세지는 다른 사람들이 봐도 이해할 수 있게 써주세요.
-- 작업 이전에 issue 작성 후 pullrequest 와 issue를 연동해 주세요.
-- 풀리퀘스트를 통해 코드 리뷰를 전원이 코드리뷰를 진행합니다.
-- 기능 개발 시 개발 브랜치에서 feature/기능 으로 브랜치를 파서 관리합니다.
-- feature 자세한 기능 한 가지를 담당하며, 기능 개발이 완료되면 각자의 브랜치로 Pull Request를 보냅니다.
-- 각자가 기간 동안 맡은 역할을 전부 수행하면, 각자 브랜치에서 develop브랜치로 Pull Request를 보냅니다.
-- develop 브랜치로의 Pull Request는 상대방의 코드리뷰 후에 merge할 수 있습니다.
-
-### ❗️ branch naming convention
-- develop
-- feature/issue_number-도메인-http Method-api
-- fix/issue_number-도메인-http Method-api
-- release/version_number
-- hotfix/issue_number - Short Description
-
-예시 >
-```
-  feature/#3-user-post-api
-```
-
-### 📋 Code Review Convention
-- P1: 꼭 반영해주세요 (Request changes)
-- P2: 적극적으로 고려해주세요 (Request changes)
-- P3: 웬만하면 반영해 주세요 (Comment)
-- P4: 반영해도 좋고 넘어가도 좋습니다 (Approve)
-- P5: 그냥 사소한 의견입니다 (Approve)
+| 기술             | 사용                             |
+|------------------|--------------------------------|
+| **Language**         | ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) |
+| **Framework**        | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-%236DB33F.svg?style=for-the-badge&logo=spring-boot&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white) |
+| **Database**         | ![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) |
+| **Deploy**           | ![AWS EC2](https://img.shields.io/badge/Amazon%20EC2-%23FF9900.svg?style=for-the-badge&logo=amazon-ec2&logoColor=white)  ![AWS Elastic Beanstalk](https://img.shields.io/badge/AWS%20Elastic%20Beanstalk-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) |
+| **API**              | ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-%23Clojure.svg?style=for-the-badge&logo=swagger&logoColor=white) |
+| **Monitoring**       | ![Node Exporter](https://img.shields.io/badge/Node%20Exporter-%230077B5.svg?style=for-the-badge&logo=prometheus&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=for-the-badge&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white) ![AWS CloudWatch](https://img.shields.io/badge/AWS%20CloudWatch-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) |
+| **CDN**             | ![AWS CloudFront](https://img.shields.io/badge/AWS%20CloudFront-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white) |
+| **Cooperative Tool** | ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) |
+| **IDE**              | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white) |
 
 
-### 🚀 Test Code Convention
-1. given, when, then을 사용한다.
-2. 테스트 메서드명은 다음과 같이 작성한다. -> 메서드명_테스트하고자하는상태_예상되는결과 (ex. giveCotton_CottonCountIs0_NotEnoughCotton)
-3. 설마 이런 거까지 생각해야하나싶은 거까지 작성한다. (ex. 솜뭉치를 여러 개 줄 수 있다.)
-4. 다수의 값을 다룰 때는 @ParameterizedTest를 활용한다.
+### 2. Database ERD
+
+![408855779-8f4a3dfa-ab98-4796-a255-3262b709b7e1](https://github.com/user-attachments/assets/01e28622-5ad1-4ab4-8128-4fd06dec1480)
+
+
+### 3. Architecture
+
+<img width="532" alt="스크린샷 2025-03-16 오후 11 02 13" src="https://github.com/user-attachments/assets/7af9fe69-c478-4b7b-b194-b6e49842a3dc" />
+
+
+
+## 기능 설명
+
+### 1. 회원 가입 및 로그인
+
+![coedu - 로그인](https://github.com/user-attachments/assets/9ef07cb6-5a9c-411a-902b-deceafab831c)
+
+
+- **로그인**: 카카오 회원가입/로그인, jwt spring security, Aouth를 통한 인증-인가
+
+### 2. 홈 화면
+
+<div style="display: flex;">
+  <img src="https://github.com/user-attachments/assets/1dcebeee-f9ae-403d-8740-a86d3018db60" alt="홈화면" loading="lazy"/>
+  <img src="https://github.com/user-attachments/assets/8997fd02-ab28-43bd-bc28-166d4165ccf1" alt="일정" loading="lazy" />
+</div>
+
+- 교육자는 교실을 생성하여 학생들을 초대하고, 수업 진행을 위한 강의실을 생성할 수 있음
+- 교실 참여자는 일정을 생성하고, 일정을 카카오 캘린더에 추가 및 관리 가능
+
+### 3. IDE
+
+![coedu게시글](https://github.com/user-attachments/assets/12422cd7-3a77-4bb1-a76a-153708adfb6e)
+
+- 웹 상에서 실시간으로 코드를 작성할 수 있는 편집기 기능
+- 실시간 채팅을 통해 양방향 소통 가능
+
+### 4. 마이 페이지
+
+![coedu 마이 페이지](https://github.com/user-attachments/assets/5c4edd86-e50d-40b5-8fdb-0079096d9ac5)
+
+
+- 개인에게 부여된 초대 코드를 통해 교실 초대
+- 초대 알림, 초대 수락/거절 알림 제공
+- 다크/라이트 모드 테마 제공
+
+## 기여
+
+- **AWS 배포**: EC2와 배포 스크립트를 활용한 배포  
+- **실시간 코드 편집기 개발**: STOMP,ProcessBuilder, AWS S3를 활용한 실시간 협업 IDE 구현 
+- **강의실 기능 설계 및 개발**: 사용자별 강의실 관리 및 참여 기능 개발  
+- **사용자 초대 기능 개발**: 개인 코드 기반 초대 기능 구현  
+- **CDN 및 보안성 강화**: AWS CloudFront를 활용한 콘텐츠 전송 최적화 및 보안성 증가  
+
