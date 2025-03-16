@@ -93,9 +93,10 @@
 
 ## 기여
 
-- **AWS 배포**: EC2와 배포 스크립트를 활용한 배포  
-- **실시간 코드 편집기 개발**: STOMP,ProcessBuilder, AWS S3를 활용한 실시간 협업 IDE 구현 
-- **강의실 기능 설계 및 개발**: 사용자별 강의실 관리 및 참여 기능 개발  
-- **사용자 초대 기능 개발**: 개인 코드 기반 초대 기능 구현  
-- **CDN 및 보안성 강화**: AWS CloudFront를 활용한 콘텐츠 전송 최적화 및 보안성 증가  
+
+- **AWS 배포**: EC2와 배포 스크립트를 활용한 배포  [(#9)](https://github.com/F3B4-KDT-Project/back-end/issues/9)
+- **실시간 코드 편집기 개발**: STOMP,ProcessBuilder, AWS S3를 활용한 실시간 협업 IDE 구현 [(#19)](https://github.com/F3B4-KDT-Project/back-end/issues/19),[(#7)](https://github.com/F3B4-KDT-Project/back-end/issues/7),[(#17)](https://github.com/F3B4-KDT-Project/back-end/issues/17)
+- **강의실 기능 설계 및 개발**: 사용자별 강의실 관리 및 참여 기능 개발  [(#7)](https://github.com/F3B4-KDT-Project/back-end/issues/7),[(#36)](https://github.com/F3B4-KDT-Project/back-end/issues/36)
+- **사용자 초대 기능 개발**: 개인 코드 기반 초대 기능 구현  [(#93)](https://github.com/F3B4-KDT-Project/back-end/issues/93)
+- **CDN 및 보안성 강화**: AWS CloudFront를 활용한 콘텐츠 전송 최적화 및 보안성 증가[(#97)](https://github.com/F3B4-KDT-Project/back-end/issues/97)
 
